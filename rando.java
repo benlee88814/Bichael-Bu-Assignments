@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.lang.*;
 
-public class rando implements Comparable{
+public class rando implements Comparable<rando>{
     int num1;
     int num2;
     int num3;
@@ -33,6 +33,6 @@ public class rando implements Comparable{
     @Override
     public int compareTo(rando compareRando) {
         int compareSum = compareRando.getSum();
-        return compareSum - this.sum;
+        return this.sum - compareSum;
     }
 }
